@@ -1,0 +1,586 @@
+
+/* To add header and logo */
+
+header {
+    display: flex;
+    flex-direction: column; /
+    align-items: flex-start; 
+    justify-content: flex-start;
+    width: 100%;
+    background-color:rgb(89, 83, 83);
+}
+
+
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    max-width: 150px;  
+    height: auto;
+    z-index: 1000;
+}
+
+/* To add nav style , hover  */
+
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color:black;
+    padding: 10px 0;
+    margin-top: 20px; 
+}
+
+
+nav ul {
+    display: flex;
+    justify-content: space-around; 
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+nav ul li {
+    padding: 10px 20px;
+}
+
+
+nav a {
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    color: #FFD700; 
+    transition: color 0.3s ease-in-out;
+}
+nav ul li a {
+    border-radius: 25px; 
+    padding: 10px 20px; 
+    background-color: #f2b97f; 
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+}
+
+nav ul li a:hover {
+    background-color: #e8a746; 
+}
+
+
+/* To add media quireis  */
+
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    nav ul li {
+        padding: 12px 0;
+    }
+
+   
+    .logo {
+        left: 10px;
+        top: 10px;
+        max-width: 120px; 
+        
+    }
+}
+.logo-container img {
+    border-radius: 90%;  
+    width: 150px;  
+    height: 150px;  
+   
+}
+.columns {
+  column-count: 3;
+}
+
+
+/* To add column layout  */
+
+
+@media (max-width: 600px) {
+  .columns {
+    column-count: 1;
+  }
+}
+input,
+button {
+  transition: all 0.3s ease;
+}
+
+input:hover {
+  border-color: #e67300;
+}
+
+
+/* To add Contact page  */
+
+.contact-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #fff3e0, #fde2c2);
+}
+
+.contact-container {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 40px;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  border-radius: 12px;
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.contact-container h1 {
+  margin-bottom: 10px;
+  font-size: 32px;
+  color: #5e4b3c;
+}
+
+.contact-container p {
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+
+/* To redeign the form and label */
+
+.form-group {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  transition: border-color 0.3s ease;
+  box-sizing: border-box;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #f27059;
+  outline: none;
+}
+
+textarea {
+  height: 120px;
+  resize: vertical;
+}
+
+button[type="submit"] {
+  background: linear-gradient(to right, #f7b783, #f27059);
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  transition:  0.3s ease-in-out;
+}
+
+button[type="submit"]:hover {
+  background: #e05b40;
+}
+
+#form-response {
+  margin-top: 15px;
+  font-weight: bold;
+  color: green;
+}
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* To add color to the header */
+
+header {
+    background-color:rgb(0, 0, 0); 
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container img {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #a82424;
+}
+
+
+main {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color:
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* To add about section */
+
+.about-section h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.about-section p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+/*To add footer color */
+
+.site-footer {
+    background-color:black;
+    color: white;
+    text-align: center;
+    padding: 40px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.site-footer .footer-content p {
+    margin: 0;
+}
+
+.about-section {
+    padding: 20px;
+}
+
+.about-section h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.about-section p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: justify;
+    color: #555;
+}
+
+
+@media (max-width: 768px) {
+    .about-section h1 {
+        font-size: 28px;
+    }
+
+    .about-section p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-section h1 {
+        font-size: 24px;
+    }
+
+    .about-section p {
+        font-size: 14px;
+    }
+}
+
+/* To add fonts to the text  */
+
+@font-face {
+    font-family: 'tagesschrift';  
+    src: url('fonts/Tagesschrift-Regular.ttf') format('truetype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+p {
+    font-family: 'tagesschrift', sans-serif;
+}
+@font-face {
+    font-family: 'PoetsenOne';  
+    src: url('fonts/PoetsenOne-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+h1,h2,nav {
+    font-family: 'PoetsenOne', sans-serif;
+}
+#contact-form {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+
+    /* multipe gradient  */
+
+    background: 
+        radial-gradient(circle at top left, #fff0d1, transparent),
+        linear-gradient(to right, #fff5e6, #ffe6cc);
+    background-blend-mode: multiply;
+}
+.logo-container img {
+    width: 120px;
+    border-radius: 50%;
+    transition: transform 0.6s ease-in-out;
+}
+
+.logo-container img:hover {
+    transform: rotate(360deg);
+}
+
+/* To add nav butttons colors  */
+
+nav ul li a {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #000000;
+    background: linear-gradient(to right, #715b44, #ffd66f); /* gradient for visual style */
+    border-radius: 20px;
+    text-decoration: none;
+    transition:  0.4s ease, transform 0.3s ease, color 0.4s ease;
+}
+
+nav ul li a:hover {
+    background: linear-gradient(to right, #715b44, #ffd66f);
+    transform: scale(1.1);
+    color: #ff0000;
+}
+
+.menu-item img {
+    width: 50%; 
+    height: 70%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* To add grid for the menu images  */
+.menu-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 0; 
+    justify-content: center;
+}
+
+
+.menu-item {
+    text-align: center; 
+    margin-bottom: 20px; 
+}
+
+
+.menu-item h3,
+.menu-item p {
+    margin: 5px 0; 
+}
+
+
+/* To add backgrount gradient colors */
+
+.about-section {
+  background: 
+    radial-gradient(circle at top left, #ffebf2, #ffbdb5),
+    linear-gradient(to bottom right, #494344, #dae1ff);
+  background-blend-mode: overlay;
+  color: #333;
+  padding: 60px;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+  border-radius: 15px;
+}
+.reflect-image {
+  -webkit-box-reflect: right 0px linear-gradient(transparent, rgba(0, 0, 0, 0.2));
+}
+.transparent-box {
+  background-color: rgba(156, 111, 111, 0.8); 
+  padding: 20px;
+  border-radius: 10px;
+
+}
+
+#contact-form {
+  background-color: rgba(247, 239, 239, 0.7); 
+  padding: 30px;
+  max-width: 600px;
+  margin: 40px auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(255, 0, 0, 0.15);
+}
+
+
+
+
+
+
+
+h1{
+    text-align: center;
+    padding: 10px;
+}
+
+
+body{
+ background-color: #F2E1C1;
+}
+
+
+.out-of-stock {
+  display: block;
+  color: red;
+  font-size: 10;
+  font-style: italic;
+  margin-top: 4px;
+}
+
+
+/* To enlarge the images  */
+
+    .lightbox-overlay {
+  position: fixed;
+  top: 0;
+  width: 100%; 
+  height: 100%;
+  background: rgba(0, 0, 0, .8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.lightbox-overlay img {
+  max-width: 90%;
+  max-height: 80%;
+  border-radius: 20px;
+  cursor: pointer;
+
+}
+
+
+.menu-img,
+.reflect-image,
+.menu-item img {
+  transition: transform 0.4s ease-in-out;
+}
+
+.menu-img:hover,
+.reflect-image:hover,
+.menu-item img:hover {
+  transform: scale(1.05);
+}
+
+
+/* To add background images for the bosy sections */
+
+body {
+  background-image: 
+    linear-gradient(to bottom right, rgba(255, 255, 255, 0.9), rgba(255, 200, 200, 0.7)),
+    url('images/Choclate\ mousse\ layer\ cake.webp');
+  background-repeat: no-repeat, repeat;
+  background-size: cover, 650px;
+  background-position: center, top left;
+}
+
+
+/* To display the audio */
+
+
+audio {
+  display: none;
+}
+
+/* To add the cart page design */
+
+.success-message {
+  margin: 50px auto;
+  padding: 20px;
+  max-width: 400px;
+  background-color: #e0ffe0;
+  color: #2d7a2d;
+  text-align: center;
+  border: 2px solid #2d7a2d;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.checkmark {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+
+
+
